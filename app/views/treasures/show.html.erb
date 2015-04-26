@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Longtitude:</strong>
+  <%= @treasure.longtitude %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @treasure.latitude %>
+</p>
+
+<%= link_to 'Edit', edit_treasure_path(@treasure) %> |
+<%= link_to 'Back', treasures_path %>
