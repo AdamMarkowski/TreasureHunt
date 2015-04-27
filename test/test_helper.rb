@@ -9,4 +9,14 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def create_treasure
+    treasure      = Treasure.new
+    treasure.long = '50.051227 N'
+    treasure.lat  = '19.945704 E'
+    assert treasure.save!
+
+    treasure.reload
+    assert_equal 50.051227, treasure.longtitude
+    assert_equal 19.945704, treasure.latitude
+  end
 end

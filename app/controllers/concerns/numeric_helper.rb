@@ -4,7 +4,7 @@ module NumericHelper
   def convert_coordinates(coord)
     if coord.to_s =~ /^[-+]?\d*\.?\d*?$/
       coord
-    elsif false
+    elsif coord.to_s =~ /^(-?\d{1,2}\.\d).*[a-zA-Z]$/
       coord     = coord.to_s
       direction = coord[-1, 1].downcase
       coord     = coord.chop.gsub(' ', '').to_f
@@ -15,7 +15,7 @@ module NumericHelper
 
       coord
     else
-      raise ArgumentError, 'wrong coord'
+      nil
     end
   end
 

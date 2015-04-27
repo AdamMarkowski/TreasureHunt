@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  post 'treasure_hunt' => 'api#check_coordinates', format: :json
   root 'treasures#index'
 
   # Example of regular route:

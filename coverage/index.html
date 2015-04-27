@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Treasurehunt</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
+    <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_green.png" />
+    <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
+  </head>
+  
+  <body>
+    <div id="loading">
+      <img src="./assets/0.10.0/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-04-28T01:20:12+02:00">2015-04-28T01:20:12+02:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="green">94.44%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         4.79
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>8</b> files in total.
+    <b>72</b> relevant lines. 
+    <span class="green"><b>68</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#10776cb72a74c82bc36cb0c1e5d097c45241487c" class="src_link" title="app/controllers/api_controller.rb">app/controllers/api_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>4.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#cbb61cb2e77f03ef7cacc39a6dfe963022161cfb" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f957e4d15d078dca97abde94382889ebf0931ee0" class="src_link" title="app/controllers/concerns/numeric_helper.rb">app/controllers/concerns/numeric_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>17.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ecd832d620ca8701ea72b25dc7ed0e429201e86a" class="src_link" title="app/controllers/treasures_controller.rb">app/controllers/treasures_controller.rb</a></td>
+        <td class="yellow strong">87.88 %</td>
+        <td>74</td>
+        <td>33</td>
+        <td>29</td>
+        <td>4</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4c68c7cd98af11d6c5636e01bce9fe54d68839cf" class="src_link" title="app/helpers/api_helper.rb">app/helpers/api_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0a441745b7ba2655517a76f194521f3f5b6f7b8e" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#12ac1208711118f339f88200f7cfeb0bcfbf419d" class="src_link" title="app/helpers/treasures_helper.rb">app/helpers/treasures_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b5139f3e8fce1662de5f0167b2f83773b23256cb" class="src_link" title="app/models/treasure.rb">app/models/treasure.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>3.4</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    <span class="group_name">Controllers</span>
+    (<span class="covered_percent"><span class="green">93.22%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         5.22
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>4</b> files in total.
+    <b>59</b> relevant lines. 
+    <span class="green"><b>55</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#10776cb72a74c82bc36cb0c1e5d097c45241487c" class="src_link" title="app/controllers/api_controller.rb">app/controllers/api_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>4.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#cbb61cb2e77f03ef7cacc39a6dfe963022161cfb" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f957e4d15d078dca97abde94382889ebf0931ee0" class="src_link" title="app/controllers/concerns/numeric_helper.rb">app/controllers/concerns/numeric_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>17.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ecd832d620ca8701ea72b25dc7ed0e429201e86a" class="src_link" title="app/controllers/treasures_controller.rb">app/controllers/treasures_controller.rb</a></td>
+        <td class="yellow strong">87.88 %</td>
+        <td>74</td>
+        <td>33</td>
+        <td>29</td>
+        <td>4</td>
+        <td>1.3</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Models">
+  <h2>
+    <span class="group_name">Models</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.4
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Models"></a>
+  <div>
+    <b>1</b> files in total.
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#b5139f3e8fce1662de5f0167b2f83773b23256cb" class="src_link" title="app/models/treasure.rb">app/models/treasure.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>3.4</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Mailers">
+  <h2>
+    <span class="group_name">Mailers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Mailers"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Helpers">
+  <h2>
+    <span class="group_name">Helpers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="yellow">
+         1.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Helpers"></a>
+  <div>
+    <b>3</b> files in total.
+    <b>3</b> relevant lines. 
+    <span class="green"><b>3</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#4c68c7cd98af11d6c5636e01bce9fe54d68839cf" class="src_link" title="app/helpers/api_helper.rb">app/helpers/api_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0a441745b7ba2655517a76f194521f3f5b6f7b8e" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#12ac1208711118f339f88200f7cfeb0bcfbf419d" class="src_link" title="app/helpers/treasures_helper.rb">app/helpers/treasures_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Libraries">
+  <h2>
+    <span class="group_name">Libraries</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Libraries"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+      </div>
+    
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.10.0 
+        and simplecov-html v0.10.0<br/>
+        using MiniTest
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="10776cb72a74c82bc36cb0c1e5d097c45241487c">
+  <div class="header">
+    <h3>app/controllers/api_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApiController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include NumericHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def check_coordinates</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="5">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    latitude   = convert_coordinates(params[:latitude])</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    longtitude = convert_coordinates(params[:longtitude])</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    email      = params[:email]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    if latitude.present? and longtitude.present?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      treasure = Treasure.near([latitude.to_f, longtitude.to_f], 1000000, :order =&gt; &quot;distance&quot;, :units =&gt; :km).first</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      distance = treasure.distance_from([latitude.to_f, longtitude.to_f], :km) * 1000 #value in km</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      distance = distance.round</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="13">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      render json: {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">             status:   &#39;ok&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">             distance: distance</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">             }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render json: {status: &#39;error&#39;, distance: -1, error: &#39;error description&#39;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="cbb61cb2e77f03ef7cacc39a6dfe963022161cfb">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # For APIs, you may want to use :null_session instead.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery with: :exception</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f957e4d15d078dca97abde94382889ebf0931ee0">
+  <div class="header">
+    <h3>app/controllers/concerns/numeric_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module NumericHelper</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  extend ActiveSupport::Concern</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def convert_coordinates(coord)</code>
+        </li>
+      
+        <li class="covered" data-hits="40" data-linenumber="5">
+          <span class="hits">40</span>
+          
+          <code class="ruby">    if coord.to_s =~ /^[-+]?\d*\.?\d*?$/</code>
+        </li>
+      
+        <li class="covered" data-hits="15" data-linenumber="6">
+          <span class="hits">15</span>
+          
+          <code class="ruby">      coord</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="7">
+          <span class="hits">25</span>
+          
+          <code class="ruby">    elsif coord.to_s =~ /^(-?\d{1,2}\.\d).*[a-zA-Z]$/</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="8">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      coord     = coord.to_s</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="9">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      direction = coord[-1, 1].downcase</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="10">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      coord     = coord.chop.gsub(&#39; &#39;, &#39;&#39;).to_f</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="12">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      if [&#39;w&#39;, &#39;s&#39;].include?(direction)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        coord = coord * -1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="16">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      coord</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">      nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ecd832d620ca8701ea72b25dc7ed0e429201e86a">
+  <div class="header">
+    <h3>app/controllers/treasures_controller.rb</h3>
+    <h4><span class="yellow">87.88 %</span> covered</h4>
+    <div>
+      <b>33</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TreasuresController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_treasure, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /treasures</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # GET /treasures.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @treasures = Treasure.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # GET /treasures/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # GET /treasures/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # GET /treasures/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @treasure = Treasure.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # GET /treasures/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # POST /treasures</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # POST /treasures.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="27">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @treasure = Treasure.new(treasure_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if @treasure.save</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html { redirect_to @treasure, notice: &#39;Treasure was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="32">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.json { render :show, status: :created, location: @treasure }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">        format.html { render :new }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">        format.json { render json: @treasure.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">  # PATCH/PUT /treasures/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  # PATCH/PUT /treasures/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      if @treasure.update(treasure_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.html { redirect_to @treasure, notice: &#39;Treasure was successfully updated.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        format.json { render :show, status: :ok, location: @treasure }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">        format.html { render :edit }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">        format.json { render json: @treasure.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  # DELETE /treasures/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  # DELETE /treasures/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @treasure.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="59">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.html { redirect_to treasures_url, notice: &#39;Treasure was successfully destroyed.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_treasure</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="67">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      @treasure = Treasure.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def treasure_params</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="72">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      params.require(:treasure).permit(:long, :lat)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="4c68c7cd98af11d6c5636e01bce9fe54d68839cf">
+  <div class="header">
+    <h3>app/helpers/api_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module ApiHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="0a441745b7ba2655517a76f194521f3f5b6f7b8e">
+  <div class="header">
+    <h3>app/helpers/application_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module ApplicationHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="12ac1208711118f339f88200f7cfeb0bcfbf419d">
+  <div class="header">
+    <h3>app/helpers/treasures_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module TreasuresHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="b5139f3e8fce1662de5f0167b2f83773b23256cb">
+  <div class="header">
+    <h3>app/models/treasure.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Treasure &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include NumericHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  reverse_geocoded_by :latitude, :longtitude</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :longtitude, presence: true, if: :longtitude</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :latitude, presence: true, if: :latitude</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_save :convert_compass_coordinates</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_accessor :long, :lat</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def convert_compass_coordinates</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="14">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    self.latitude   = convert_coordinates(self.lat)</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="15">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    self.longtitude = convert_coordinates(self.long)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
+  </body>
+</html>
