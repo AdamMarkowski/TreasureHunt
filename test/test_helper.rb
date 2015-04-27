@@ -19,4 +19,9 @@ class ActiveSupport::TestCase
     assert_equal 50.051227, treasure.longtitude
     assert_equal 19.945704, treasure.latitude
   end
+
+  def create_token
+    token = Token.create(token: 'sdfsdUFI&FYTUVHOIB')
+    token.token
+  end
 end

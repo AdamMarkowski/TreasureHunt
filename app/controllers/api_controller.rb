@@ -1,6 +1,8 @@
 class ApiController < ApplicationController
   include NumericHelper
 
+  before_filter :check_auth
+
   def check_coordinates
     latitude   = convert_coordinates(params[:latitude])
     longtitude = convert_coordinates(params[:longtitude])
@@ -8,8 +10,8 @@ class ApiController < ApplicationController
 
     if latitude.present? and longtitude.present? and email.present?
       @treasure = Treasure.near([latitude.to_f, longtitude.to_f], 1000000, :order => "distance", :units => :km).first
-      distance = @treasure.distance_from([latitude.to_f, longtitude.to_f], :km) * 1000 #value in km
-      distance = distance.round
+      distance  = @treasure.distance_from([latitude.to_f, longtitude.to_f], :km) * 1000 #value in km
+      distance  = distance.round
 
       if distance <= 5
         @treasure.founded += 1
@@ -26,4 +28,9 @@ class ApiController < ApplicationController
     end
   end
 
+  def check_auth
+    unless params[:token].present? and Token.find_by_token(params[:token]).present?
+      render json: {status: 'authentication failed'}
+    end
+  end
 end
