@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426202248) do
+ActiveRecord::Schema.define(version: 20150427233538) do
 
   create_table "treasures", force: :cascade do |t|
-    t.decimal  "longtitude", precision: 64, scale: 12
-    t.decimal  "latitude",   precision: 64, scale: 12
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
+    t.float    "longtitude"
+    t.float    "latitude"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "founded",    default: 0
   end
 
 end

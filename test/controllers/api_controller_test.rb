@@ -79,4 +79,16 @@ class ApiControllerTest < ActionController::TestCase
     assert_equal -1, response['distance']
     assert_equal 'error description', response['error']
   end
+
+  test 'should increase founded number' do
+    create_treasure
+
+    post :check_coordinates, {longtitude: 50.051227, latitude: 19.945704, email: 'sad@asd.pl'}
+    assert_response :success
+
+    response = JSON.parse(@response.body)
+    assert_equal 'ok', response['status']
+    assert_equal 0.0, response['distance']
+    assert_equal assigns(:treasure).founded, 1
+  end
 end
